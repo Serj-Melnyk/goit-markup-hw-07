@@ -29,6 +29,12 @@
     margin-bottom: 0;
 }
 
+.modal__cross {
+    fill: #000000;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+
 .modal__close {
     position: absolute;
     display: flex;
@@ -44,25 +50,26 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
 
+
     &:hover,
-    &:focus {
+        &:focus {
             cursor: pointer;
-        }
-    
-    &:hover .modal__close__icon,
-    &:focus .modal__close__icon {
             fill: var(--accent-color);
         }
+    
+        //      &:hover + .modal__cross,
+        //      &:focus + .modal__cross {
+        //     fill: var(--accent-color);
+        // }
+
+    
 }
 
-.modal__close__icon {
-    fill: #000000;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 
 
-.modal__pic {
+
+.modal-pic {
     display: flex;
     position: relative;
 }
@@ -154,12 +161,13 @@
 
     color: rgba(117, 117, 117, 0.5);
 
-    &:focus {
-            border-color: var(--accent-color);
-            cursor: pointer;
-        }
 }
 
+.modal__comment:focus {
+
+    border-color: var(--accent-color);
+    cursor: pointer;
+}
 
 .backdrop {
     position: fixed;

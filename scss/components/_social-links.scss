@@ -4,13 +4,15 @@
     align-items: center;
 }
 
-.social__item:not(:last-child) {
-    margin-right: 10px;
-}
+
 
 .social__item {
     width: 44px;
     height: 44px;
+
+    &:not(:last-child) {
+            margin-right: 10px;
+        }
 }
 
 .social__icon {
@@ -38,3 +40,12 @@
     }
 }
 
+
+.social__link--bgc{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social__icon--color{
+    fill: #ffffff;
+    
+}

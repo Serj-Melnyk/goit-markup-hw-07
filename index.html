@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>goit-markup-hw-04</title>
+    <title>goit-markup-hw-07</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -81,7 +81,7 @@
 
                         <label class="modal__field">
                             <span class="modal__label">Имя</span>
-                            <div class="modal__pic">
+                            <div class="modal-pic">
                                 <input class="modal__input" type="text" name="name">
                                 <svg class="modal__icon" width="12" height="12">
                                     <use href="./images/svg/sprite.svg#icon-name"></use>
@@ -91,7 +91,7 @@
 
                         <label class="modal__field">
                             <span class="modal__label">Телефон</span>
-                            <div class="modal__pic">
+                            <div class="modal-pic">
                                 <input class="modal__input" type="tel" name="tel">
                                 <svg class="modal__icon" width="13" height="13">
                                     <use href="./images/svg/sprite.svg#icon-tel"></use>
@@ -100,8 +100,8 @@
                         </label>
 
                         <label class="modal__field">
-                            <span class="modal__label">Телефон</span>
-                            <div class="modal__pic">
+                            <span class="modal__label">Почта</span>
+                            <div class="modal-pic">
                                 <input class="modal__input" type="email" name="mail">
                                 <svg class="modal__icon" width="15" height="12">
                                     <use href="./images/svg/sprite.svg#icon-mail"></use>
@@ -143,8 +143,8 @@
 
 
 
-                    <button data-modal-close class="modal-close" type="button" aria-label="Закрыть">
-                        <svg class=".modal__close__icon" width="11" height="11">
+                    <button data-modal-close class="modal__close" type="button" aria-label="Закрыть">
+                        <svg class=".modal__cross" width="11" height="11">
                             <use href="./images/svg/sprite.svg#icon-Vector-1"></use>
                         </svg>
                     </button>
@@ -197,21 +197,21 @@
 
         </section>
         <!--чем мы занимаемся-->
-        <section class="working">
+        <section class="section-working">
 
             <div class="container">
 
-                <h2 class="work-title">Чем мы занимаемся</h2>
+                <h2 class="work__title">Чем мы занимаемся</h2>
                 <ul class=" work list">
-                    <li class="work-item"><img src="./images/work/box1.jpg" alt="создаем сайты для ПК" width="370"
+                    <li class="work__item"><img src="./images/work/box1.jpg" alt="создаем сайты для ПК" width="370"
                             height="294" />
                         <p class="preview">Десктопные приложения</p>
                     </li>
-                    <li class="work-item">
+                    <li class="work__item">
                         <img src="./images/work/box2.jpg" alt="создаем мобильные приложения" width="370" height="294" />
                         <p class="preview">Мобильные приложения</p>
                     </li>
-                    <li class="work-item">
+                    <li class="work__item">
                         <img src="./images/work/box3.jpg" alt="оптимизируем под планшет" width="370" height="294" />
                         <p class="preview">Дизайнерские решения</p>
                     </li>
@@ -219,7 +219,7 @@
             </div>
         </section>
         <!--наша команда-->
-        <section class="section section__group">
+        <section class="section-group">
 
             <div class="container">
 
@@ -550,35 +550,35 @@
                 <div class="join">
                     <h3 class="join-title">присоединяйтесь</h3>
 
-                    <ul class="join-list list">
-                        <li class="join-item">
-                            <a class="join-link link" href="" target="_blank" rel="noopener noreferrer"
-                                aria-label="иконка Instagram">
-                                <svg class="join-icon" width="20" height="20">
+                    <ul class="social list">
+                        <li class="social__item">
+                            <a class="social__link social__link--bgc link" href="" target="_blank"
+                                rel="noopener noreferrer" aria-label="иконка Instagram">
+                                <svg class="social__icon social__icon--color" width="20" height="20">
                                     <use href="./images/svg/sprite.svg#icon-instagram-2-2"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="join-item">
-                            <a class="join-link link" href="" target="_blank" rel="noopener noreferrer"
-                                aria-label="иконка Twitter">
-                                <svg class="join-icon" width="20" height="20">
+                        <li class="social__item">
+                            <a class="social__link social__link--bgc link" href="" target="_blank"
+                                rel="noopener noreferrer" aria-label="иконка Twitter">
+                                <svg class="social__icon social__icon--color" width="20" height="20">
                                     <use href="./images/svg/sprite.svg#icon-twitter"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="join-item">
-                            <a class="join-link link" href="" target="_blank" rel="noopener noreferrer"
-                                aria-label="иконка Facebook">
-                                <svg class="join-icon" width="20" height="20">
+                        <li class="social__item">
+                            <a class="social__link social__link--bgc link" href="" target="_blank"
+                                rel="noopener noreferrer" aria-label="иконка Facebook">
+                                <svg class="social__icon social__icon--color" width="20" height="20">
                                     <use href="./images/svg/sprite.svg#icon-facebook"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="join-item">
-                            <a class="join-link link" href="" target="_blank" rel="noopener noreferrer"
-                                aria-label="иконка Linkedin">
-                                <svg class="join-icon" width="20" height="20">
+                        <li class="social__item">
+                            <a class="social__link social__link--bgc link" href="" target="_blank"
+                                rel="noopener noreferrer" aria-label="иконка Linkedin">
+                                <svg class="social__icon social__icon--color" width="20" height="20">
                                     <use href="./images/svg/sprite.svg#icon-linkedin"></use>
                                 </svg>
                             </a>

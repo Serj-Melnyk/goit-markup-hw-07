@@ -2,6 +2,7 @@
 @import "./utils/vars";
 @import "./utils/visually-hidden";
 
+
 // base styles
 @import "./base/common";
 @import "./base/reset";
@@ -10,11 +11,21 @@
 
 
 // components
+@import"./components/modal";
 @import "./components/button";
 @import "./components/logo";
 @import "./components/social-links";
-@import "./components/button";
+@import "./components/btn";
+@import "./components/form-subscription";
+
 
 
 // layout
 @import"./layouts/header-module/header-module";
+@import"./layouts/hero";
+@import"./layouts/skills";
+@import"./layouts/work";
+@import"./layouts/team";
+@import"./layouts/clients";
+@import"./layouts/portfolio";
+@import"./layouts/footer";
